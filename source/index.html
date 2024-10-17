@@ -16,9 +16,7 @@
       <a class="main-header__logo logo-drink" href="index.html" aria-current="page">
         <picture>
           <source width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
-          </source>
           <source width="82" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
-          </source>
           <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="32" height="36" alt="Логотип Drink2Go">
         </picture>
         <span class="main-header__description">Интернет-магазин кофейных напитков</span>
@@ -58,10 +56,10 @@
             <span>Корзина</span>
           </a>
         </li>
-        <button class="navigation__toogle navigation__toggle--open  navigation__toggle--bg" type="button">
-          <span class="visually-hidden">Навигация по сайту</span>
-        </button>
       </ul>
+      <button class="navigation__toogle navigation__toggle--open  navigation__toggle--bg" type="button">
+        <span class="visually-hidden">Навигация по сайту</span>
+      </button>
     </div>
 
     <div class="main-header__hero hero" data-test="hero">
@@ -99,35 +97,46 @@
             </div>
           </div>
         </li>
-        <button class="slider-list__arrow slider-list__arrow--left" type="button">
-          <span class="visually-hidden">предыдущий слайд</span>
-        </button>
-        <button class="slider-list__arrow slider-list__arrow--right" type="button">
-          <span class="visually-hidden">следующий слайд</span>
-        </button>
       </ul>
+      <button class="slider-list__arrow slider-list__arrow--left" type="button">
+        <span class="visually-hidden">предыдущий слайд</span>
+      </button>
+      <button class="slider-list__arrow slider-list__arrow--right" type="button">
+        <span class="visually-hidden">следующий слайд</span>
+      </button>
     </div>
   </header>
   <main>
 
     <!-- features -->
     <section class="features wrapper" data-test="features">
-      <span class="features-badge badge">Преимущества</span>
-      <h3 class="features-title title-h3">Главные причины выбрать Drink2Go</h3>
-      <ul class="features__list">
+      <span class="features__badge badge">Преимущества</span>
+      <h3 class="features__head title-h3">Главные причины выбрать Drink2Go</h3>
+      <ul class="features__list ">
         <li class="features__item features__item--health">
-          <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
+          <h4 class="features__title title-h4">Скорость</h4>
+          <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
         </li>
         <li class="features__item features__item--water">
-          <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <h4 class="features__title title-h4">Удобство</h4>
+          <p class="features__description">Легко помещается и в карман,<br> и в маленькую сумочку</p>
         </li>
         <li class="features__item features__item--food">
-          <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <h4 class="features__title title-h4">Бодрость</h4>
+          <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
         </li>
         <li class="features__item features__item--time">
-          <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
+          <h4 class="features__title title-h4">Экологичность</h4>
+          <p class="features__description">Вся упаковка сделана<br>
+            из перерабатываемых материалов</p>
         </li>
       </ul>
+    </section>
+
+    <!-- catalog -->
+    <section class="catalog" data-test="catalog">
+      <span class="catalog__badge badge">Каталог</span>
+      <h3 class="catalog__head title-h3">Каталог кофейных напитков причины выбрать Drink2Go</h3>
     </section>
   </main>
 

@@ -1,1 +1,30 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-basic, --font-basic);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 400;
+  color: var(--base-darker-color, #333333);
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1600px;
+    padding: 0 110px;
+  }
+}

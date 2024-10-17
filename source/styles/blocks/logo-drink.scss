@@ -1,0 +1,7 @@
+.logo-drink {
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+  }
+}

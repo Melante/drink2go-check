@@ -1,0 +1,9 @@
+@mixin font-face($font-family, $font-weight, $font-stile, $src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-stile;
+    src: $src;
+    font-display: swap;
+  }
+}

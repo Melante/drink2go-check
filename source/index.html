@@ -6,13 +6,15 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/nouislider.min.css">
   <link rel="stylesheet" href="styles/styles.css">
+
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header" data-test="header">
-    <div class="main-header__wrapper ">
+    <div class="main-header__wrapper">
       <a class="main-header__logo logo-drink" href="index.html" aria-current="page">
         <picture>
           <source width="170" height="36" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
@@ -44,27 +46,28 @@
             </a>
           </li>
         </ul>
+        <ul class="navigation__list navigation__list--user user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--login" href="#">
+              <span>Войти</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--basket" href="#">
+              <span>Корзина</span>
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__toggle navigation__toggle--open  navigation__toggle--bg js-toggle-button" type="button">
+          <span class="visually-hidden">Навигация по сайту</span>
+        </button>
       </nav>
-      <ul class="main-header__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__link user-list__link--login" href="#">
-            <span>Войти</span>
-          </a>
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__link user-list__link--basket" href="#">
-            <span>Корзина</span>
-          </a>
-        </li>
-      </ul>
-      <button class="navigation__toogle navigation__toggle--open  navigation__toggle--bg" type="button">
-        <span class="visually-hidden">Навигация по сайту</span>
-      </button>
+
     </div>
 
     <div class="main-header__hero hero" data-test="hero">
       <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков.</h1>
-      <ul class="hero-list slider-list">
+      <ul class="hero__list slider-list slider-pagination">
         <li class="slider-list__item slider-list__item--flat">
           <div class="slider-list__wrapper wrapper">
             <div class="wrapper__image">
@@ -75,7 +78,7 @@
 
                 <source srcset="images/hero/hero1-desktop@1x.png, images/hero/hero1-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
                 <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/hero/hero1-tablet@1x.png, images/hero/hero1-tablet@2x.png 2x">
-                <img class="slider-list__image" src="images/hero/hero1-mobile@1x.png" srcset="images/hero/hero1-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
+                <img class="slider-list__image slider-list__image--current" src="images/hero/hero1-mobile@1x.png" srcset="images/hero/hero1-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
               </picture>
             </div>
             <div class="wrapper__content">
@@ -135,8 +138,91 @@
 
     <!-- catalog -->
     <section class="catalog" data-test="catalog">
-      <span class="catalog__badge badge">Каталог</span>
-      <h3 class="catalog__head title-h3">Каталог кофейных напитков причины выбрать Drink2Go</h3>
+      <div class="catalog__wrapper wrapper">
+        <span class="catalog__badge badge">Каталог</span>
+        <h3 class="catalog__head title-h3">Каталог кофейных напитков</h3>
+        <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog__filter-group filter-group rang">
+            <legend class="rang__title">Цена:</legend>
+            <div class="rang__slider"></div>
+            <div class="rang__price range-form">
+
+              <label class="range-form__label" for="min-price">
+                <input class="range-form__input min-input" type="text" inputmode="numeric" pattern="\d*" id="min-price" value="0" name="min-price" required>
+              </label>
+              <div class="range-form__sign">
+                <span class="visually-hidden">-</span>
+              </div>
+              <label class="range-form__label" for="max-price">
+                <input class="range-form__input max-input" type="text" inputmode="numeric" pattern="\d*" id="max-price" value="900" name="max-price" required>
+              </label>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="catalog__filter-group filter-group topping">
+            <legend class="filter-group__title">Наличие молока</legend>
+            <ul class="filter-group__list">
+              <li class="filter-group__item">
+                <label class="filter-group__label" for="either-id">
+                  <input class="filter-group__input" id="either-id" type="radio" name="topping" value="either" checked>
+                  <span class="filter-group__description">Неважно</span>
+                </label>
+              </li>
+              <li class="filter-group__item">
+                <label class="filter-group__label" for="natural-id">
+                  <input class="filter-group__input" id="natural-id" type="radio" name="topping" value="natural">
+                  <span class="filter-group__description">Только животное</span>
+                </label>
+              </li>
+              <li class="filter-group__item">
+                <label class="filter-group__label" for="vegetable-id">
+                  <input class="filter-group__input" id="vegetable-id" type="radio" name="topping" value="vegetable">
+                  <span class="filter-group__description">Только растительное</span>
+                </label>
+              </li>
+              <li class="filter-group__item">
+                <label class="filter-group__label" for="notoping-id" disabled>
+                  <input class="filter-group__input" id="notoping-id" type="radio" name="topping" value="notoping">
+                  <span class="filter-group__description">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="catalog__filter-group filter-group country">
+            <legend class="filter-group__title">Страна произрастания</legend>
+            <ul class="filter-group__list">
+              <li class="filter-group__item checkbox">
+                <label class="filter-group__label checkbox__label" for="checkbox1">
+                  <input class="checkbox__input" type="checkbox" id="checkbox1" name="Бразилия">
+                  <span class="filter-group__description checkbox__description">Бразилия</span>
+                </label>
+                <label class="filter-group__label checkbox__label" for="checkbox2">
+                  <input class="checkbox__input" type="checkbox" id="checkbox2" name="Эфиопия">
+                  <span class="filter-group__description checkbox__description">Эфиопия</span>
+                </label>
+                <label class="filter-group__label checkbox__label" for="checkbox3">
+                  <input class="checkbox__input" type="checkbox" id="checkbox3" name="Колумбия">
+                  <span class="filter-group__description checkbox__description">Колумбия</span>
+                </label>
+                <label class="filter-group__label checkbox__label" for="checkbox4">
+                  <input class="checkbox__input" type="checkbox" id="checkbox4" name="Коста-Рика">
+                  <span class=" filter-group__description checkbox__description">Коста-Рика</span>
+                </label>
+                <label class="filter-group__label checkbox__label" for="checkbox5" disabled>
+                  <input class="checkbox__input" type="checkbox" id="checkbox5" name="Перу">
+                  <span class="filter-group__description checkbox__description">Перу</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="catalog__button">
+            <button class="catalog__button-on button" type="submit">Применить</button>
+            <button class="catalog__button-off button" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
 
@@ -155,6 +241,8 @@
     </ul>
   </footer>
   <script src="scripts/index.js" defer="defer"></script>
+  <script src="vendor/nouislider.min.js"></script>
+
 </body>
 
 </html>

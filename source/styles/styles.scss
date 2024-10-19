@@ -5,6 +5,8 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
+@import "./blocks/title-h3.scss";
+@import "./blocks/title-h4.scss";
 @import "./blocks/button.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/page.scss";
@@ -14,9 +16,13 @@
 @import "./blocks/user-list.scss";
 @import "./blocks/slider-list.scss";
 @import "./blocks/badge.scss";
-@import "./blocks/slider-price.scss";
 @import "./blocks/features.scss";
-@import "./blocks/title-h3.scss";
-@import "./blocks/title-h4.scss";
+@import "./blocks/slider-price.scss";
+@import "./blocks/noui.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/filter-group.scss";
+@import "./blocks/rang.scss";
+@import "./blocks/rang-form.scss";
+@import "./blocks/checkbox.scss";
 @import "./blocks/main-footer.scss";
 

@@ -1,0 +1,58 @@
+.noui-base {
+  height: 4px;
+}
+
+.noui-target {
+  background: var(--base-darker-light-color, #e2e2e2);
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.noui-horizontal,
+.noui-connects {
+  position: relative;
+  height: 4px;
+  border-radius: 0;
+}
+
+
+.noui-connect {
+  background: var(--primary-light, #9070ec);
+}
+
+.noui-horizontal .noui-handle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 60%;
+  transform: translateY(-60%);
+  border: 2px solid var(--primary-light, #9070ec);
+
+  @media (min-width: $tablet-width) {
+    right: -23px;
+  }
+}
+
+.noui-handle::after,
+.noui-handle::before {
+  display: none;
+}
+
+.noui-touch-area {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.noui-origin {
+  position: relative;
+}
+
+.noui-handle-lower {
+
+}
+
+.noui-horizontal .noui-handle-upper {
+  right: 0;
+}

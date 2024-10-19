@@ -1,10 +1,15 @@
 .features {
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 38px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 98px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 95px;
+    padding-bottom: 118px;
   }
 }
 
@@ -15,7 +20,9 @@
 }
 
 .features__head {
-  padding-top: 5px;
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
 }
 
 
@@ -81,7 +88,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -10px;
+    top: 0;
+    left: 10px;
     width: 52px;
     height: 56px;
   }

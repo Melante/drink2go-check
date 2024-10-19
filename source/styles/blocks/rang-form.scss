@@ -1,0 +1,36 @@
+.range-form {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+}
+
+
+.range-form__input {
+  font-family: var(--font-basic, "Montserrat");
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 6px;
+  max-width: 118px;
+  border: 2px solid var(--primary-light, #9070ec);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 87px;
+  }
+}
+
+.range-form__sign {
+  background: url("../../icons/stack.svg#stroke");
+  width: 8px;
+  height: 2px;
+  align-items: center;
+}

@@ -9,6 +9,10 @@
   line-height: 1.5;
   font-weight: 600;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
 }
 
 .rang__slider {

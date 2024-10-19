@@ -3,6 +3,11 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-bottom: 25px;
+  }
 }
 
 .sorting__title {
@@ -16,7 +21,6 @@
   line-height: 1.5;
   padding: 4px 10px;
   margin: 0;
-
   margin-left: auto;
   box-sizing: border-box;
   border: none;
@@ -27,5 +31,11 @@
   background-position: center right 20px;
   background-size: 10px 6px;
   appearance: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    min-width: 165px;
+    background-position: center right 10px;
+  }
 }
 

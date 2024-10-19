@@ -137,13 +137,14 @@
     </section>
 
     <!-- catalog -->
+    <!-- filtr-->
     <section class="catalog" data-test="catalog">
       <div class="catalog__wrapper wrapper">
         <span class="catalog__badge badge">Каталог</span>
         <h3 class="catalog__head title-h3">Каталог кофейных напитков</h3>
         <form class="catalog__filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog__filter-group filter-group rang">
-            <legend class="rang__title">Цена:</legend>
+            <legend class="filter-group__title rang__title">Цена:</legend>
             <div class="rang__slider"></div>
             <div class="rang__price range-form">
 
@@ -222,6 +223,146 @@
             <button class="catalog__button-off button" type="reset">Сбросить</button>
           </div>
         </form>
+
+        <!-- catalog -->
+        <div class="catalog__block">
+          <div class="catalog__sorting filter-group sorting">
+            <h4 class="filter-group__title sorting__title">Сортировка:</h4>
+            <select class="sorting__select" aris-label="Сортировка" name="sorting">
+              <option value="default">по умолчанию</option>
+              <option value="cheap">Cначала дешевые</option>
+              <option value="expensive">Cначала дорогие</option>
+            </select>
+          </div>
+          <div class="catalog__cards card">
+            <ul class="card__list">
+              <li class="card__item">
+                <a class="card__link" href="#" tabindex="-1">
+                  <picture>
+                    <source srcset="images/catalog/coffee1@1x.webp, images/catalog/coffee1@2x.webp 2x" type="image/webp" width="130" height="188">
+                    <img class="card__image" src="images/catalog/coffee1@1x.png" srcset="images/catalog/coffee1@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <a class="card__link" href="#">
+                  <h4 class="card__title title-h4">Декаф Флэт Уайт</h4>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__order">
+                  <p class="card__price">225₽</p>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#" tabindex="-1">
+                  <picture>
+                    <source srcset="images/catalog/coffee2@1x.webp, images/catalog/coffee2@2x.webp 2x" type="image/webp" width="130" height="188">
+                    <img class="card__image" src="images/catalog/coffee2@1x.png" srcset="images/catalog/coffe21@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <a class="card__link" href="#">
+                  <h4 class="card__title title-h4">Декаф Флэт Уайт</h4>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__order">
+                  <p class="card__price">225₽</p>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#" tabindex="-1">
+                  <picture>
+                    <source srcset="images/catalog/coffee3@1x.webp, images/catalog/coffee3@2x.webp 2x" type="image/webp" width="130" height="188">
+                    <img class="card__image" src="images/catalog/coffee3@1x.png" srcset="images/catalog/coffee3@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <a class="card__link" href="#">
+                  <h4 class="card__title title-h4">Декаф Флэт Уайт</h4>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__order">
+                  <p class="card__price">225₽</p>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#" tabindex="-1">
+                  <picture>
+                    <source srcset="images/catalog/coffee4@1x.webp, images/catalog/coffee4@2x.webp 2x" type="image/webp" width="130" height="188">
+                    <img class="card__image" src="images/catalog/coffee4@1x.png" srcset="images/catalog/coffee4@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <a class="card__link" href="#">
+                  <h4 class="card__title title-h4">Декаф Флэт Уайт</h4>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__order">
+                  <p class="card__price">225₽</p>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#" tabindex="-1">
+                  <picture>
+                    <source srcset="images/catalog/coffee5@1x.webp, images/catalog/coffee5@2x.webp 2x" type="image/webp" width="130" height="188">
+                    <img class="card__image" src="images/catalog/coffee5@1x.png" srcset="images/catalog/coffee5@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <a class="card__link" href="#">
+                  <h4 class="card__title title-h4">Декаф Флэт Уайт</h4>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__order">
+                  <p class="card__price">225₽</p>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#" tabindex="-1">
+                  <picture>
+                    <source srcset="images/catalog/coffee6@1x.webp, images/catalog/coffee6@2x.webp 2x" type="image/webp" width="130" height="188">
+                    <img class="card__image" src="images/catalog/coffee6@1x.png" srcset="images/catalog/coffee6@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <a class="card__link" href="#">
+                  <h4 class="card__title title-h4">Декаф Флэт Уайт</h4>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с&nbsp;натуральным фермерским молоком</p>
+                <div class="card__order">
+                  <p class="card__price">225₽</p>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- pagination -->
+          <div class="pagination">
+            <button class="pagination__button pagination__button--left" type="button">
+              <span class="visually-hidden">предыдущая страница</span>
+            </button>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link " href="#">1</a>
+              </li>
+              <li class="pagination__item pagination__item--active">
+                <a class="pagination__link  pagination__link--current" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+            </ul>
+            <button class="pagination__button pagination__button--right" type="button">
+              <span class="visually-hidden">следующая страница</span>
+            </button>
+          </div>
+
+        </div>
       </div>
     </section>
   </main>

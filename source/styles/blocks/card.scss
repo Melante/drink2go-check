@@ -1,0 +1,76 @@
+.card__list {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: grid;
+  gap: 20px;
+}
+
+.card__item {
+  padding: 40px 20px 21px;
+  background-color: var(--base-light-color, #ffffff);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__image {
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+  padding: 0;
+  width: 130px;
+  height: 188px;
+}
+
+.card__title {
+  text-align: start;
+  margin-top: 25px;
+  margin-bottom: 4px;
+  color: var(--base-darker-color, #333333);
+}
+
+.card__description {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.card__order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__price {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.card__button {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 400;
+  min-width: 141px;
+}
+
+.card__button::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#cardbasket");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 16px;
+  width: 20px;
+  height: 20px;
+}

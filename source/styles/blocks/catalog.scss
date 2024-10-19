@@ -1,6 +1,14 @@
 .catalog {
   text-align: center;
   background-color: var(--back-basic, #f8f8f8);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .catalog__wrapper {

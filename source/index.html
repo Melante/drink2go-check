@@ -48,8 +48,8 @@
         </ul>
       </nav>
 
-      <div class="main-header__user account">
-        <ul class="account__list account__list--user user-list">
+      <div class="main-header__user main-header__user-nojs account">
+        <ul class="account__list  account__list--user user-list">
           <li class="user-list__item">
             <a class="user-list__link user-list__link--login" href="#">
               <span>Войти</span>
@@ -61,7 +61,7 @@
             </a>
           </li>
         </ul>
-        <button class="account__toggle account__toggle--open  account__toggle--bg js-toggle-button" type="button">
+        <button class="account__toggle" type="button">
           <span class="visually-hidden">Навигация по сайту</span>
         </button>
       </div>
@@ -149,15 +149,14 @@
             <legend class="filter-group__title rang__title">Цена:</legend>
             <div class="rang__slider"></div>
             <div class="rang__price range-form">
-
               <label class="range-form__label" for="min-price">
-                <input class="range-form__input min-input" type="text" inputmode="numeric" pattern="\d*" id="min-price" value="0" name="min-price" required>
+                <input class="range-form__input min-input" type="text" inputmode="numeric" pattern="\d*" id="min-price" value="0" name="min-price" placeholder="0" required>
               </label>
               <div class="range-form__sign">
                 <span class="visually-hidden">-</span>
               </div>
               <label class="range-form__label" for="max-price">
-                <input class="range-form__input max-input" type="text" inputmode="numeric" pattern="\d*" id="max-price" value="900" name="max-price" required>
+                <input class="range-form__input max-input" type="text" inputmode="numeric" pattern="\d*" id="max-price" value="900" name="max-price" placeholder="900" required>
               </label>
 
             </div>

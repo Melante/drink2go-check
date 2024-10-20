@@ -5,9 +5,6 @@
 .account__toggle {
   margin: 0;
   padding: 0;
-}
-
-.account__toggle--open {
   cursor: pointer;
   background-image: url("../../images/icon/open.svg");
   background-size: 16px 16px;
@@ -17,15 +14,17 @@
   height: 60px;
   width: 60px;
   border: none;
+  background-color: var(--base-light-color, #ffffff);
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.account__toggle--open:active {
+.account__toggle:active {
   background-color: var(--base-secondary, #f0ebff);
 }
+
 
 .account__toggle--close {
   cursor: pointer;

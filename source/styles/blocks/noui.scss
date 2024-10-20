@@ -31,9 +31,45 @@
   right: -23px;
 }
 
+.noui-connect:disabled {
+  background-color: var(--base-dark-light-color, #bdbdbd);
+}
+
+.noui-horizontal:disabled .noui-handle:disabled {
+  border: 2px solid var(--base-dark-light-color, #bdbdbd);
+}
+
+.noui-handle {
+  position: absolute;
+}
+
 .noui-handle::after,
 .noui-handle::before {
   display: none;
+}
+
+.noui-handle:hover::after,
+.noui-handle:focus::after,
+.noui-handle:active::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  border-radius: 50%;
+  left: 2px;
+}
+
+.noui-handle:hover::after,
+.noui-handle:focus::after {
+
+  background: var(--primary-opacity, rgba(120, 89, 207, 0.25));
+}
+
+.noui-handle:active::after {
+
+  background: var(--base-primary, #7859cf);
 }
 
 .noui-touch-area {
@@ -47,7 +83,8 @@
 }
 
 
-
 .noui-horizontal .noui-handle-upper {
   right: 0;
 }
+
+

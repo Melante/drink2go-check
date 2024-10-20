@@ -37,6 +37,19 @@
   }
 }
 
+.range-form__input::placeholder {
+  color: var(--base-dark-light-color, #bdbdbd);
+}
+
+.range-form__input:focus {
+  border: 2px solid var(--primary-dark, #593cac);
+}
+
+.range-form__input:disabled {
+  color: var(--base-dark-light-color, #bdbdbd);
+  border: 2px solid var(--base-dark-light-color, #bdbdbd);
+}
+
 .range-form__sign {
   background: url("../../icons/stack.svg#stroke");
   width: 8px;

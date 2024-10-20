@@ -1,19 +1,15 @@
-/* в этот файл добавляет скрипты*/
-const burger = document.querySelector('.account__toggle--open');
+/* navigation */
+
+const burger = document.querySelector('.account__toggle');
 const nav = document.querySelector('.navigation__list');
-const block = document.querySelector('.account-nojs');
-const cross = document.querySelector('.account__toggle--bg');
-const list = document.querySelector('.account-nojs-list');
 
-
-list.classList.remove('account-nojs-list');
-block.classList.remove('account-nojs');
-cross.classList.remove('account__toggle--bg');
 
 burger.onclick = function() {
   burger.classList.toggle('account__toggle--close');
   nav.classList.toggle('account__list--open');
 };
+
+/* noui */
 
 
 const rangeSlider = document.querySelector('.rang__slider');
@@ -38,5 +34,15 @@ if(rangeSlider) {
     inputs[handle].value = Math.round(values[handle]);
   });
 }
+
+/* select */
+
+const selectClose = document.querySelector('.sorting__select');
+const selectOpen = document.querySelector('.sorting__select--open');
+
+selectClose.onclick = function() {
+  selectClose.classList.toggle('sorting__select--open');
+  selectOpen.classList.toggle('sorting__select');
+};
 
 

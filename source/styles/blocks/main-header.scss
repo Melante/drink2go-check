@@ -22,6 +22,10 @@
   align-items: center;
   text-decoration: none;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .main-header__logo-image {

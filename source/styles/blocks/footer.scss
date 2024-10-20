@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer__line {
+  border-bottom: 1px solid var(--base-secondary, #f0ebff);
+  width: 100vw;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    border: 0;
+    width: 100%;
+  }
+}
+

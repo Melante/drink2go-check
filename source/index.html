@@ -109,7 +109,7 @@
       </button>
     </div>
   </header>
-  <main>
+  <main class="page__main">
 
     <!-- features -->
     <section class="features wrapper" data-test="features">
@@ -382,19 +382,84 @@
     </section>
   </main>
 
-  <footer class="main-footer">
-    <ul class="main-header__list user-list">
-      <li class="user-list__item">
-        <a class="user-list__link user-list__link--login" href="#">
-          <span>Войти</span>
-        </a>
-      </li>
-      <li class="user-list__item">
-        <a class="user-list__link user-list__link--basket" href="#">
-          <span>Корзина</span>
-        </a>
-      </li>
-    </ul>
+  <footer class="page__footer footer wrapper" data-test="footer">
+
+    <div class="footer__social footer-block social ">
+      <a class="social__logo logo-drink" href="index.html" aria-current="page">
+        <picture>
+          <source width="170" height="36" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-desktop.svg">
+          <img class="social__image" src="images/logo/logo-tablet.svg" width="82" height="36" alt="Логотип Drink2Go">
+        </picture>
+
+      </a>
+      <span class="social__description">Интернет-магазин кофейных напитков</span>
+      <ul class="social__list ">
+        <li class="social__item">
+          <a class=" social__link social__link--vk" href="#">
+            <span class="visually-hidden">
+              Перейти на нашу страницу в вконтакте.
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class=" social__link social__link--pinterest" href="#">
+            <span class="visually-hidden">
+              Перейти на нашу страницу в пинтересте.
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class=" social__link social__link--ok" href="#">
+            <span class="visually-hidden">
+              Перейти на нашу страницу в одноклассниках.
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__shop footer-block ">
+      <h5 class="footer-block__title">Интернет-магазин</h5>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">Каталог</span>
+      </a>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">Доставка</span>
+      </a>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">Способ оплаты</span>
+      </a>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">О нас</span>
+      </a>
+    </div>
+
+    <div class="footer__media footer-block ">
+      <h5 class="footer-block__title">Медиа</h5>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">Блог</span>
+      </a>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">Информация для СМИ</span>
+      </a>
+      <a class="footer-block__link" href="#">
+        <span class="footer-block__description">Правовая информация</span>
+      </a>
+    </div>
+
+    <div class="footer__contacts footer-block ">
+      <h5 class="footer-block__title footer-block__title--contacts">Контакты</h5>
+      <p class="footer-block__icon footer-block__icon--address">Санкт-Петербург, набережная реки Карповки, дом 5</p>
+      <a class="footer-block__icon footer-block__icon--phone" href="tel:+7(999)999-99-99">+7 (999) 999-99-99</a>
+    </div>
+
+    <div class="footer__developed footer-logo ">
+      <span class="footer-logo__text">Разработано </span>
+      <a class="footer-logo__web " href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer-logo__html">в HTML Academy</span>
+      </a>
+    </div>
+
   </footer>
   <script src="scripts/index.js" defer="defer"></script>
   <script src="vendor/nouislider.min.js"></script>

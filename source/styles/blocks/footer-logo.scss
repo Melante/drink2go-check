@@ -1,0 +1,37 @@
+.footer-logo {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    margin: 0 auto;
+  }
+}
+
+.footer-logo__text {
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--base-dark-light-color, #bdbdbd);
+}
+
+.footer-logo__web {
+  display: flex;
+  text-decoration: none;
+}
+
+.footer-logo__html {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--base-dark-light-color, #bdbdbd);
+}
+
+.footer-logo__html::after {
+  content: "";
+  display: block;
+  mask-image: url("../../images/logo/htmlacademy-logo.svg");
+  width: 12px;
+  height: 16px;
+  background-color: var(--base-dark-light-color, #bdbdbd);
+}

@@ -1,18 +1,18 @@
 /* в этот файл добавляет скрипты*/
-const burger = document.querySelector('.navigation__toggle--open');
+const burger = document.querySelector('.account__toggle--open');
 const nav = document.querySelector('.navigation__list');
-const block = document.querySelector('.navigation-nojs');
-const cross = document.querySelector('.navigation__toggle--bg');
-const list = document.querySelector('.navigation-nojs-list');
+const block = document.querySelector('.account-nojs');
+const cross = document.querySelector('.account__toggle--bg');
+const list = document.querySelector('.account-nojs-list');
 
 
-list.classList.remove('navigation-nojs-list');
-block.classList.remove('navigation-nojs');
-cross.classList.remove('navigation__toggle--bg');
+list.classList.remove('account-nojs-list');
+block.classList.remove('account-nojs');
+cross.classList.remove('account__toggle--bg');
 
 burger.onclick = function() {
-  burger.classList.toggle('navigation__toggle--close');
-  nav.classList.toggle('navigation__list--open');
+  burger.classList.toggle('account__toggle--close');
+  nav.classList.toggle('account__list--open');
 };
 
 

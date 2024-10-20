@@ -60,7 +60,7 @@
     align-content: start;
     max-width: 318px;
     padding: 0;
-    gap: 30px;
+    gap: 33px;
   }
 }
 
@@ -84,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 10px;
+    margin-top: 5px;
     max-width: none;
   }
 }

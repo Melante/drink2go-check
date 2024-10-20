@@ -35,3 +35,22 @@
   height: 16px;
   background-color: var(--base-dark-light-color, #bdbdbd);
 }
+
+.footer-logo__html:hover,
+.footer-logo__html:focus {
+  color: var(--base-primary, #7859cf);
+}
+
+.footer-logo__html:hover::after,
+.footer-logo__html:focus::after {
+  background-color: var(--base-primary, #7859cf);
+}
+
+.footer-logo__html:active {
+  color: var(--primary-dark, #593cac);
+}
+
+.footer-logo__html:active::after {
+  background-color: var(--primary-dark, #593cac);
+}
+

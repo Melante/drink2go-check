@@ -1,11 +1,10 @@
 .footer {
-  margin-top: 20px;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {

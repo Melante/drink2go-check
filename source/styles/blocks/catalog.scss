@@ -107,3 +107,19 @@
   }
 }
 
+.catalog__button-off:focus,
+.catalog__button-off:hover {
+  --base-primary: var(--base-light-color, #ffffff);
+  --base-light-color: var(--primary-light, #9070ec);
+}
+
+.catalog__button-off:active {
+  --base-primary: var(--base-light-color, #ffffff);
+  --base-light-color: var(--primary-dark, #593cac);
+}
+
+.catalog__button-off:disabled {
+  --base-primary: var(--base-light-color, #ffffff);
+  --base-light-color: var(--base-darker-light-color, #e2e2e2);
+}
+

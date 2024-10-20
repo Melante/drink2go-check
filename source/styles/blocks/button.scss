@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   padding: 8px;
   font-family: var(--font-basic, inherit);
   font-size: 16px;
@@ -8,4 +9,17 @@
   border: none;
   color: var(--base-light-color, #ffffff);
   background-color: var(--base-primary, #7859cf);
+}
+
+.button:hover,
+.button:focus {
+  --base-primary: var(--primary-light, #9070ec);
+}
+
+.button:active {
+  --base-primary: var(--primary-dark, #593cac);
+}
+
+.button:disabled {
+  --base-primary: var(--base-dark-light-color, #bdbdbd);
 }

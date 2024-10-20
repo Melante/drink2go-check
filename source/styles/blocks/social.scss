@@ -50,6 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
   width: 40px;
   height: 40px;
 }
@@ -76,3 +77,20 @@
 .social__link--ok {
   --icon: url("../../icons/stack.svg#ok");
 }
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--base-secondary, #f0ebff);
+}
+
+.social__link:hover::before,
+.social__link:focus::before,
+.social__link:active::before {
+  background-color: var(--base-primary, #7859cf);
+}
+
+
+.social__link:active {
+  background-color: var(--primary-opacity, rgba(120, 89, 207, 0.25));
+}
+

@@ -4,7 +4,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 98px;
+    padding-top: 60px;
+    padding-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,15 +21,17 @@
 }
 
 .features__head {
+  margin-top: 5px;
+
   @media (min-width: $tablet-width) {
-    margin-top: 5px;
+    margin-top: 6px;
   }
 }
 
 
 .features__list {
   display: grid;
-  gap: 12px;
+  gap: 11px;
   margin: 0;
   padding: 0;
   padding-top: 36px;
@@ -63,7 +66,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 340px;
-    padding-left: 80px;
+    padding-left: 81px;
     box-sizing: border-box;
     margin: 0;
   }

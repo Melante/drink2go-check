@@ -3,7 +3,7 @@
   background-color: var(--back-basic, #f8f8f8);
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -11,9 +11,17 @@
   }
 }
 
+.catalog__head {
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
+}
+
 .catalog__wrapper {
   padding-top: 50px;
-  padding-bottom: 44px;
+  padding-bottom: 46px;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;

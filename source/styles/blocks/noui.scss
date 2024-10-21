@@ -28,7 +28,9 @@
   top: 60%;
   transform: translateY(-60%);
   border: 2px solid var(--primary-light, #9070ec);
+  background-color: var(--base-light-color, #ffffff);
   right: -23px;
+  box-sizing: border-box;
 }
 
 .noui-connect:disabled {
@@ -86,5 +88,4 @@
 .noui-horizontal .noui-handle-upper {
   right: 0;
 }
-
 

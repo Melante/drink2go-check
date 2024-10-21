@@ -8,7 +8,7 @@
   display: grid;
   place-items: center;
   margin: 0 -10px;
-  width: 80px;
+  width: 20px;
   height: 100%;
   border-radius: 2px;
   background-color: transparent;
@@ -31,6 +31,10 @@
 .hero__status--left {
   left: 10px;
 
+  @media (min-width: $tablet-width) {
+    left: 40px;
+  }
+
   @media (min-width: $desktop-width) {
     left: 10px;
   }
@@ -38,6 +42,10 @@
 
 .hero__status--right {
   right: 10px;
+
+  @media (min-width: $tablet-width) {
+    right: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     right: 10px;
@@ -55,7 +63,7 @@
 
 .hero__arrow {
   position: absolute;
-  top: 73%;
+  top: 49%;
   cursor: pointer;
   display: grid;
   align-items: center;
@@ -71,7 +79,7 @@
   height: 20px;
 
   @media (min-width: $tablet-width) {
-    top: 92%;
+    top: 37%;
   }
 
   @media (min-width: $desktop-width) {

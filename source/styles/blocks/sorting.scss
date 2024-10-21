@@ -34,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    min-width: 165px;
+    max-width: 165px;
     background-position: center right 10px;
   }
 }

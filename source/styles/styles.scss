@@ -15,7 +15,9 @@
 @import "./blocks/navigation.scss";
 @import "./blocks/account.scss";
 @import "./blocks/user-list.scss";
+@import "./blocks/hero.scss";
 @import "./blocks/slider-list.scss";
+@import "./blocks/slider-pagination.scss";
 @import "./blocks/badge.scss";
 @import "./blocks/features.scss";
 @import "./blocks/slider-price.scss";
@@ -34,4 +36,5 @@
 @import "./blocks/social.scss";
 @import "./blocks/footer-logo.scss";
 @import "./blocks/main-footer.scss";
+@import "./vendor/nouislider.min.css";
 

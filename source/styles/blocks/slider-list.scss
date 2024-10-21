@@ -5,6 +5,11 @@
 }
 
 .slider-list__item {
+  display: none;
+}
+
+.slider-list__item--current {
+  display: block;
   background-color: var(--back-slider);
 
   @media (min-width: $tablet-width) {
@@ -13,7 +18,7 @@
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(var(--back-slider) 100%);
-    padding-bottom: 80px;
+    padding-bottom: 84px;
   }
 }
 
@@ -21,7 +26,15 @@
   --back-slider: var(--back-flat, #f3ebe1);
 }
 
-.slider-list__wrapper {
+.slider-list__item--latte {
+  --back-slider: var(--back-latte, #eae6fc);
+}
+
+.slider-list__item--espresso {
+  --back-slider: var(--back-espresso, #e5e6e8);
+}
+
+.slider-list__image {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -33,26 +46,30 @@
     padding-top: 58px;
     padding-bottom: 0;
     max-width: 608px;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    align-items: center;
-    padding-top: 10px;
-    text-align: start;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-}
-
-.slider-list__image {
-  @media (min-width: $tablet-width) {
     margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    text-align: start;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    padding-top: 20px;
+  }
+}
+
+.slider-list__img {
+  @media (min-width: $desktop-width) {
+
+    display: block;
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+    padding-top: 10px;
     margin-left: 65px;
-    margin-right: 30px;
   }
 }
 
@@ -83,46 +100,3 @@
     margin-top: 16px;
   }
 }
-
-
-.slider-list__arrow {
-  position: absolute;
-  top: 73%;
-  cursor: pointer;
-  display: inline-block;
-  background-image: var(--arrow);
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  border: none;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  width: 20px;
-  height: 20px;
-
-  @media (min-width: $tablet-width) {
-    top: 92%;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 107%;
-  }
-}
-
-.slider-list__arrow--left {
-  --arrow: url("../../icons/stack.svg#sliderleft");
-
-  @media (min-width: $tablet-width) {
-    margin-left: 31px;
-  }
-}
-
-.slider-list__arrow--right {
-  --arrow: url("../../icons/stack.svg#sliderright");
-  right: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 31px;
-  }
-}
-

@@ -6,7 +6,7 @@
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="vendor/nouislider.min.css">
+
   <link rel="stylesheet" href="styles/styles.css">
 
   <script src="scripts/index.js" defer></script>
@@ -70,46 +70,116 @@
 
     <div class="main-header__hero hero" data-test="hero">
       <h1 class="visually-hidden">Drink2Go — это интернет-магазин по продаже кофейных напитков.</h1>
-      <ul class="hero__list slider-list slider-pagination">
-        <li class="slider-list__item slider-list__item--flat">
-          <div class="slider-list__wrapper wrapper">
-            <div class="wrapper__image">
-              <picture>
-                <source srcset="images/hero/hero1-desktop@1x.webp, images/hero/hero1-desktop@2x.webp 2x" width="600" height="600" type="image/webp" media="(min-width: 1440px)">
-                <source srcset="images/hero/hero1-tablet@1x.webp, images/hero/hero1-tablet@2x.webp 2x" width="476" height="476" type="image/webp" media="(min-width: 768px)">
-                <source srcset="images/hero/hero1-mobile@1x.webp, images/hero/hero1-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
+      <div class="hero__slider">
+        <ul class="hero__list slider-list ">
+          <li class="slider-list__item slider-list__item--flat active">
+            <div class="slider-list__image wrapper">
+              <div class="wrapper__image">
+                <picture>
+                  <source srcset="images/hero/hero1-desktop@1x.webp, images/hero/hero1-desktop@2x.webp 2x" width="600" height="600" type="image/webp" media="(min-width: 1440px)">
+                  <source srcset="images/hero/hero1-tablet@1x.webp, images/hero/hero1-tablet@2x.webp 2x" width="476" height="476" type="image/webp" media="(min-width: 768px)">
+                  <source srcset="images/hero/hero1-mobile@1x.webp, images/hero/hero1-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
 
-                <source srcset="images/hero/hero1-desktop@1x.png, images/hero/hero1-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
-                <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/hero/hero1-tablet@1x.png, images/hero/hero1-tablet@2x.png 2x">
-                <img class="slider-list__image slider-list__image--current" src="images/hero/hero1-mobile@1x.png" srcset="images/hero/hero1-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
-              </picture>
-            </div>
-            <div class="wrapper__content">
-              <span class="slider-list__badge badge">Новинка!</span>
-              <h2 class="slider-list__title">
-                Декаф Флэт Уайт
-              </h2>
-              <p class="slider-list__description">Свежесваренный кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком — то, что нужно
-                для расслабления после тяжёлого рабочего дня
-              </p>
-              <div class="slider-list__price slider-price">
-                <span class="slider-price__old">295₽</span>
-                <span class="slider-price__new">225₽</span>
-                <button class="slider-price__button button" type="button">
-                  Заказать
-                </button>
+                  <source srcset="images/hero/hero1-desktop@1x.png, images/hero/hero1-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
+                  <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/hero/hero1-tablet@1x.png, images/hero/hero1-tablet@2x.png 2x">
+                  <img class="slider-list__img slider-list__image--current" src="images/hero/hero1-mobile@1x.png" srcset="images/hero/hero1-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт">
+                </picture>
+              </div>
+              <div class="wrapper__content">
+                <span class="slider-list__badge badge">Новинка!</span>
+                <h2 class="slider-list__title">
+                  Декаф Флэт Уайт
+                </h2>
+                <p class="slider-list__description">Свежесваренный кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком — то, что нужно
+                  для расслабления после тяжёлого рабочего дня
+                </p>
+                <div class="slider-list__price slider-price">
+                  <span class="slider-price__old">295₽</span>
+                  <span class="slider-price__new">225₽</span>
+                  <button class="slider-price__button button" type="button">
+                    Заказать
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-      <button class="slider-list__arrow slider-list__arrow--left" type="button">
-        <span class="visually-hidden">предыдущий слайд</span>
-      </button>
-      <button class="slider-list__arrow slider-list__arrow--right" type="button">
-        <span class="visually-hidden">следующий слайд</span>
-      </button>
+          </li>
+          <li class="slider-list__item slider-list__item--latte">
+            <div class="slider-list__image wrapper">
+              <div class="wrapper__image">
+                <picture>
+                  <source srcset="images/hero/hero2-desktop@1x.webp, images/hero/hero2-desktop@2x.webp 2x" width="600" height="600" type="image/webp" media="(min-width: 1440px)">
+                  <source srcset="images/hero/hero2-tablet@1x.webp, images/hero/hero2-tablet@2x.webp 2x" width="476" height="476" type="image/webp" media="(min-width: 768px)">
+                  <source srcset="images/hero/hero2-mobile@1x.webp, images/hero/hero2-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
+
+                  <source srcset="images/hero/hero2-desktop@1x.png, images/hero/hero2-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
+                  <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/hero/hero2-tablet@1x.png, images/hero/hero2-tablet@2x.png 2x">
+                  <img class="slider-list__img slider-list__image--current" src="images/hero/hero2-mobile@1x.png" srcset="images/hero/hero1-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
+                </picture>
+              </div>
+              <div class="wrapper__content">
+                <span class="slider-list__badge badge">Новинка!</span>
+                <h2 class="slider-list__title">
+                  Лавандовый Латте
+                </h2>
+                <p class="slider-list__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                </p>
+                <div class="slider-list__price slider-price">
+                  <span class="slider-price__old">295₽</span>
+                  <span class="slider-price__new">225₽</span>
+                  <button class="slider-price__button button" type="button">
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="slider-list__item slider-list__item--espresso">
+            <div class="slider-list__image wrapper">
+              <div class="wrapper__image">
+                <picture>
+                  <source srcset="images/hero/hero3-desktop@1x.webp, images/hero/hero3-desktop@2x.webp 2x" width="600" height="600" type="image/webp" media="(min-width: 1440px)">
+                  <source srcset="images/hero/hero3-tablet@1x.webp, images/hero/hero3-tablet@2x.webp 2x" width="476" height="476" type="image/webp" media="(min-width: 768px)">
+                  <source srcset="images/hero/hero3-mobile@1x.webp, images/hero/hero3-mobile@2x.webp 2x" type="image/webp" width="280" height="280">
+
+                  <source srcset="images/hero/hero3-desktop@1x.png, images/hero/hero3-desktop@2x.png 2x" width="600" height="600" type="image/png" media="(min-width: 1440px)">
+                  <source width="476" height="476" type="image/png" media="(min-width: 768px)" srcset="images/hero/hero3-tablet@1x.png, images/hero/hero3-tablet@2x.png 2x">
+                  <img class="slider-list__img slider-list__image--current" src="images/hero/hero3-mobile@1x.png" srcset="images/hero/hero3-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
+                </picture>
+              </div>
+              <div class="wrapper__content">
+                <span class="slider-list__badge badge">Новинка!</span>
+                <h2 class="slider-list__title">
+                  Тройной Эспрессо
+                </h2>
+                <p class="slider-list__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                </p>
+                <div class="slider-list__price slider-price">
+                  <span class="slider-price__old">295₽</span>
+                  <span class="slider-price__new">225₽</span>
+                  <button class="slider-price__button button" type="button">
+                    Заказать
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="hero__status hero__status--left">
+          <button class="hero__arrow hero__arrow--left wrapper" type="button">
+            <span class="visually-hidden">предыдущий слайд</span>
+          </button>
+        </div>
+        <div class="hero__status hero__status--right">
+          <button class="hero__arrow hero__arrow--right wrapper" type="button">
+            <span class="visually-hidden">следующий слайд</span>
+          </button>
+        </div>
+
+        <div class="hero__navigation slider-pagination wrapper">
+          <span class="visually-hidden">Пагинация слайдера</span>
+        </div>
+      </div>
     </div>
   </header>
   <main class="page__main">
@@ -463,7 +533,7 @@
     </div>
 
   </footer>
-  <script src="scripts/index.js" defer="defer"></script>
+  <script src="scripts/index.js" defer="defer" type="module"></script>
   <script src="vendor/nouislider.min.js"></script>
 
 </body>

@@ -64,6 +64,15 @@
   color: var(--base-darker-color, #333333);
 }
 
+.footer-block__description:hover,
+.footer-block__description:focus {
+  color: var(--primary-light, #9070ec);
+}
+
+.footer-block__description:active {
+  color: var(--primary-dark, #593cac);
+}
+
 .footer-block__icon {
   display: grid;
   grid-template-columns: 20px  1fr;
